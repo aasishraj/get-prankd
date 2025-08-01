@@ -4,7 +4,6 @@
   "version": "1.0",
   "description": "A Chrome extension for pranking users with keyboard interference",
   "permissions": [
-    "activeTab",
     "storage"
   ],
   "content_scripts": [
