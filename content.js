@@ -58,13 +58,19 @@ class PrankManager {
   generateWordReplacements() {
     const commonWords = [
       'the', 'and', 'that', 'have', 'for', 'not', 'with', 'you', 'this', 'but',
-      'his', 'from', 'they', 'she', 'her', 'been', 'than', 'its', 'who', 'did'
+      'his', 'from', 'they', 'she', 'her', 'been', 'than', 'its', 'who', 'did',
+      'on', 'at', 'by', 'what', 'so', 'if', 'are', 'or', 'can', 'was',
+      'my', 'your', 'we', 'me', 'do', 'all', 'just', 'now', 'up', 'out',
+      'in', 'as', 'an', 'is', 'it', 'be', 'to', 'of', 'no', 'yes', 'am'
     ];
     
     const replacementWords = [
       'potato', 'banana', 'unicorn', 'pickle', 'wizard', 'llama', 'cheese', 'ninja',
       'robot', 'dragon', 'muffin', 'sparkle', 'rubber', 'duck', 'pancake', 'zombie',
-      'rainbow', 'penguin', 'bubble', 'taco'
+      'rainbow', 'penguin', 'bubble', 'taco', 'toaster', 'goblin', 'noodle', 'squirrel',
+      'cactus', 'waffle', 'meow', 'jellybean', 'sloth', 'glitter', 'trombone', 'moose',
+      'fudge', 'burrito', 'doughnut', 'beard', 'giraffe', 'yeti', 'plumbus', 'marshmallow',
+      'snail', 'sock', 'popcorn', 'blobfish', 'saxophone', 'wiggle', 'chimpanzee', 'picklejuice'
     ];
     
     this.wordReplacements.clear();
