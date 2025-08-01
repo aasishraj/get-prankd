@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    body {
+      width: 300px;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      margin: 0;
+    }
+    
+    .title {
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    }
+    
+    .mode-selector {
+      margin-bottom: 20px;
+    }
+    
+    .mode-option {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+      padding: 10px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    
+    .mode-option:hover {
+      background: rgba(255,255,255,0.2);
+    }
+    
+    .mode-option input[type="radio"] {
+      margin-right: 10px;
+      transform: scale(1.2);
+    }
+    
+    .mode-label {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    
+    .mode-description {
+      font-size: 12px;
+      opacity: 0.8;
+    }
+    
+    .status {
+      text-align: center;
+      padding: 10px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 8px;
+      margin-top: 15px;
+      font-size: 14px;
+    }
+    
+    .active {
+      color: #4CAF50;
+      font-weight: bold;
+    }
+    
+    .inactive {
+      color: #f44336;
+    }
+    
+    .gif-container {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    
+    .meme-gif {
+      width: 120px;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      border: 2px solid rgba(255,255,255,0.2);
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    
+    .meme-gif:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+    }
+  </style>
+</head>
+<body>
+  <div class="title">🎭 Get Prankd</div>
+  
+  <div class="gif-container">
+    <a href="https://r.mtdv.me/giveaways/amazon-gift" target="_blank" rel="noopener noreferrer">
+      <img src="sonic-tongue-memes-sonic.gif" alt="Sonic meme" class="meme-gif">
+    </a>
+  </div>
+  
+  <div class="mode-selector">
+    <label class="mode-option">
+      <input type="radio" name="mode" value="off" id="off">
+      <div>
+        <div class="mode-label">Off</div>
+        <div class="mode-description">Normal typing behavior</div>
+      </div>
+    </label>
+    
+    <label class="mode-option">
+      <input type="radio" name="mode" value="mild" id="mild">
+      <div>
+        <div class="mode-label">Mildly Infuriating</div>
+        <div class="mode-description">Random words get replaced as you type</div>
+      </div>
+    </label>
+    
+    <label class="mode-option">
+      <input type="radio" name="mode" value="violation" id="violation">
+      <div>
+        <div class="mode-label">Outright Violation</div>
+        <div class="mode-description">All keys randomly remapped</div>
+      </div>
+    </label>
+  </div>
+  
+  <div class="status">
+    Status: <span id="status-text" class="inactive">Inactive</span>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
